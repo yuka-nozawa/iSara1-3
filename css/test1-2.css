@@ -5,16 +5,15 @@ img{
   width:100%;
   height: auto;
 }
-.element.style{
-  padding:75px 0;
-}
-.body{
+body{
   font-family:"游ゴシック体";
   font-size: 16px;
   font-weight:bold;
   margin: 0 auto;
   color:#333333;
   width:100%;
+  box-sizing: border-box;
+  overflow-x: hidden;
   padding-top:75px;
 }
 .inner{
@@ -213,8 +212,8 @@ p.copy{
   width:100%;
 }
 @media screen and (max-width:767px){ 
-  .element.style{
-    padding:82px 0;
+  body{
+    padding-top:82px;
   }
   .inner{
    margin:0 auto;
@@ -222,8 +221,7 @@ p.copy{
    padding-left:15px;
   }
   #header{
-    height:62px;
-    position: static;
+    height:82px;
   }
   #header > .inner{
     display: block;
